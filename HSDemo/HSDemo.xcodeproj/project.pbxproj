@@ -13,6 +13,8 @@
 		461E92FF1E2DBF7600219F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461E92FE1E2DBF7600219F8F /* Assets.xcassets */; };
 		461E93021E2DBF7600219F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461E93001E2DBF7600219F8F /* LaunchScreen.storyboard */; };
 		461E930D1E2DBF7700219F8F /* HSDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E930C1E2DBF7700219F8F /* HSDemoUITests.swift */; };
+		46FACEFB1E2F16B8002740AE /* HSSuspendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FACEFA1E2F16B8002740AE /* HSSuspendingView.swift */; };
+		46FACEFD1E2F21BC002740AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FACEFC1E2F21BC002740AE /* SecondViewController.swift */; };
 		C53C478E2FAC98489E4EB360 /* Pods_HSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F63EE2A768AC3022C7B6F /* Pods_HSDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		461E93081E2DBF7700219F8F /* HSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461E930C1E2DBF7700219F8F /* HSDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSDemoUITests.swift; sourceTree = "<group>"; };
 		461E930E1E2DBF7700219F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FACEFA1E2F16B8002740AE /* HSSuspendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSSuspendingView.swift; sourceTree = "<group>"; };
+		46FACEFC1E2F21BC002740AE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7DFCF3BFB5D7576997FD9927 /* Pods-HSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSDemo/Pods-HSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9F63EE2A768AC3022C7B6F /* Pods_HSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B469C1A7FF367AC474448139 /* Pods-HSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSDemo/Pods-HSDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				461E92FE1E2DBF7600219F8F /* Assets.xcassets */,
 				461E93001E2DBF7600219F8F /* LaunchScreen.storyboard */,
 				461E93031E2DBF7600219F8F /* Info.plist */,
+				46FACEFA1E2F16B8002740AE /* HSSuspendingView.swift */,
+				46FACEFC1E2F21BC002740AE /* SecondViewController.swift */,
 			);
 			path = HSDemo;
 			sourceTree = "<group>";
@@ -276,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FACEFD1E2F21BC002740AE /* SecondViewController.swift in Sources */,
 				461E92FA1E2DBF7600219F8F /* ViewController.swift in Sources */,
 				461E92F81E2DBF7600219F8F /* AppDelegate.swift in Sources */,
+				46FACEFB1E2F16B8002740AE /* HSSuspendingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
