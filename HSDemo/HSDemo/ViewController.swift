@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         progress = HSCustomView.createProgress(at: self.view, frame: progressRect, deepColor: .red, lightColor: .yellow, backgroundColor: UIColor.color(with: "0xf0f0f0"), value: 0.9, isCornerRadius: true, direction: .right, isAnimated: true, duration: 2.0)
         
         
-        
+        print(UIDevice.current.orientation)
         
     }
 
