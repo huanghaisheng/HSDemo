@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         progress = HSCustomView.createProgress(at: self.view, frame: progressRect, deepColor: .red, lightColor: .yellow, backgroundColor: UIColor.color(with: "0xf0f0f0"), value: 0.9, isCornerRadius: true, direction: .right, isAnimated: true, duration: 2.0)
         
         
-        print(UIDevice.current.orientation)
+        NotificationCenter.default.addObserver(self, selector: #selector(orientionChanged), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
     }
 
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -82,6 +82,32 @@ class ViewController: UIViewController {
         let nextViewController = SecondViewController.initViewController()
         self.navigationController?.pushViewController(nextViewController, animated: true)
         
+    }
+    
+    func orientionChanged() -> Void {
+        
+        switch UIDevice.current.orientation {
+        case UIDeviceOrientation.portrait:
+            print("Portrait")
+            break
+        case UIDeviceOrientation.portraitUpsideDown:
+            print("PortraitUpsideDown")
+            break
+        case UIDeviceOrientation.landscapeLeft:
+            print("LandscapeLeft")
+            break
+        case UIDeviceOrientation.landscapeRight:
+            print("LandscapeRight")
+            break
+        case UIDeviceOrientation.faceDown:
+            print("FaceDown")
+            break
+        case UIDeviceOrientation.faceUp:
+            print("FaceUp")
+            break
+        default:
+            break
+        }
     }
     
 }
